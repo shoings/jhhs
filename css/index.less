@@ -1,0 +1,237 @@
+body{
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #F2F4F7;
+}
+a{
+    text-decoration: none;
+    color: #707070 ;
+}
+
+a {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-moz-user-focus: none;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+
+.wrap{
+    background-color: #fff;
+    padding-bottom: 1.1467rem;
+}
+@media screen and (min-width:750px){
+    html{
+        font-size: 37.5px;
+    }
+}
+.header{
+    text-align: center;
+    color: #1C1C1C;
+    font-size: .9333rem;
+    line-height: 2.1333rem;
+    height: 2.1333rem;
+    border-bottom: 1px solid #EAEAEA;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem 0 1.6rem 0;
+
+    .item:nth-child(-n+3){
+        margin-bottom: 1.6533rem;
+    }
+    
+    .item{
+        display: flex;
+        width: 33.33%;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 3.7067rem;
+            height: 3.7067rem;
+        }
+
+        span{
+            font-size: .6667rem;
+            color: #707070;
+        }
+    }
+   
+}
+.go{
+    width: 19.2533rem;
+    height: 4.0533rem;
+    margin: 0 .2667rem 0 .48rem;
+    margin-bottom: 1.1467rem;
+    
+    img{
+        width: 100%;
+    }
+}
+.content{
+    padding: 1.0667rem .5867rem .64rem;
+    background-color: #fff;
+    margin-top: .2667rem;
+    .content-hd{
+        margin-bottom: .9067rem ;
+        display: flex;
+        height: 1.0133rem;
+        justify-content: space-between;
+        
+           h4{
+               font-size: .7467rem;
+               color: #333;
+               margin: 0;
+
+               img{
+                width: 1.0133rem;
+                height: 1.0133rem;
+                padding: 0 .48rem 0 0;
+                vertical-align: middle;
+            }
+           }
+           .more{
+               font-size: .5867rem;
+               color: #999;
+           }
+    }
+    // 轮播图
+    .get_job_focus{
+        position: relative;
+
+        .swiper-button-next,
+        .swiper-button-prev{
+            position: absolute;
+            top: 6.4533rem;
+
+            &:after{
+                font-size: 1.3333rem;
+                color: #333;
+            }
+        }
+        .swiper-container {
+            height: 100%;
+            width: 100%;
+          }
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+      
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            transform: scale(0.8);
+            opacity: 0.6;
+            // overflow: hidden;
+            a{
+                width: 9.0133rem;
+                height: 10.0267rem;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .ls{  
+                    width: 9.0133rem;
+                    font-size: .6667rem;
+                    margin-top: .64rem;
+                    color: #333;
+                }
+            }
+          }
+          .swiper-slide-active,.swiper-slide-duplicate-active{
+            transform: scale(1);
+            opacity: 1;
+            z-index: 999;
+          }
+    }
+}
+
+// 学习模块
+.study{
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 7.7333rem;
+        height: 9.0667rem;
+        background-color: skyblue;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+// 底部模块
+.footer{
+    display: flex;
+    width: 20rem;
+    height: 2.9333rem;
+    position: fixed;
+    left: 0;
+    bottom: 35.3333rem;
+    background-color: #fff;
+    z-index: 999999; 
+    border-top: 1px solid #ccc;
+    .items{
+        display: flex;
+        flex: 1;
+        flex-direction:column;
+        align-items: center;
+        padding: .5067rem 0 .2933rem 1.2rem;
+        img{
+            width: 1.04rem;
+            height: 1.0933rem;
+            
+        }
+
+        span{
+            margin-top: .2933rem;
+            display: block;
+            font-size: .5867rem;
+        }
+    }
+}

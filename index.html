@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑马程序员官网-IT培训机构|java培训|前端培训|python培训|大数据培训</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="shortcut icon" href="heima.ico">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <section class="wrap">
+        <header class="header">黑马面面</header>
+        <!-- 导航栏部分 -->
+        <nav class="nav">
+            <a href="#" class="item">
+                <img src="images/3.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#" class="item">
+                <img src="images/-e-笔.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="#" class="item">
+                <img src="images/-e-电脑(1).png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="#" class="item">
+                <img src="images/-e-模拟.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="#" class="item">
+                <img src="images/-e-形状16.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="#" class="item">
+                <img src="images/-e-形状9.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- go区域 -->
+        <section class="go">
+            <a href="#">
+                <img src="images/1.png" alt="">
+            </a>
+        </section>
+    </section>
+
+    <!-- 就业指导模块 -->
+    <section class="content">
+        <div class="content-hd">
+            <h4>
+                <img src="icons/-e-新手指导.png" alt="">
+                就业指导
+            </h4>
+            <a href="#" class="more"> 更多>></a>
+        </div>
+        <!-- 轮播图 -->
+        <section class="get_job_focus">
+            <!-- Swiper -->
+            <!-- 左右箭头 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="icons/pic.png" alt="">
+                        </a>
+                        <a href="#" class="ls">老师教你面试技巧</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="D:../cutman素材/dog.jpg" alt="">
+                        </a>
+                        <a href="#" class="ls">老师教你面试技巧</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="D:../cutman素材/banner2.jpg" alt="">
+                        </a>
+                        <a href="#" class="ls">老师教你面试技巧</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                // 第一个函数里面的时就业指导轮播图
+                (function () {
+                    var swiper = new Swiper('.swiper-container', {
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        loop: true,
+                    });
+                })()
+            </script>
+        </section>
+    </section>
+
+
+    <!-- 充电学习模块 -->
+    <section class="content">
+        <div class="content-hd">
+            <h4>
+                <img src="icons/-e-新手指导.png" alt="">
+                充电学习
+            </h4>
+            <a href="#" class="more"> 更多>></a>
+        </div>
+        <div class="study">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                    // 第一个函数里面的时就业指导轮播图
+                    (function () {
+                        var swiper = new Swiper(".mySwiper", {
+                            slidesPerView: 2.5,
+                            spaceBetween: 30,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                        });
+                    })()
+            </script>
+    </section>
+    </section>
+    <div class="footer">
+
+        <a href="#" class="items">
+            <img src="icons/sy.png" alt="">
+            <span>首页</span>
+        </a>
+
+        <a href="#" class="items">
+            <img src="icons/sy.png" alt="">
+            <span>技术面试</span>
+        </a>
+
+        <a href="#" class="items">
+            <img src="icons/sy.png" alt="">
+            <span>模拟面试</span>
+        </a>
+
+        <a href="#" class="items">
+            <img src="icons/sy.png" alt="">
+            <span>我的主页</span>
+        </a>
+    </div>
+</body>
+
+</html>
